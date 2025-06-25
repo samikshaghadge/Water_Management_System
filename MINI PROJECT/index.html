@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Facts</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solar System Facts</h1>
+        <p id="factDisplay">Click the button to get a fact!</p>
+        <button id="factButton">Get Fact</button>
+    </div>
+    <script>
+        const facts = [
+            "The Sun's Mass: The Sun contains 99.86% of the total mass of the solar system, making it the dominant gravitational force.",
+            "Planetary Orbits: All eight planets orbit the Sun in the same direction, counterclockwise when viewed from above the Sun's north pole.",
+            "Gas Giants vs. Terrestrial Planets: The solar system has four terrestrial planets (Mercury, Venus, Earth, Mars) and four gas giants (Jupiter, Saturn, Uranus, Neptune).",
+            "Jupiter's Size: Jupiter is the largest planet in the solar system, with a diameter of about 86,881 miles (139,822 kilometers), making it more than 11 times wider than Earth.",
+            "Saturn's Rings: Saturn is famous for its stunning rings, which are made primarily of ice particles, with a smaller amount of rocky debris and dust.",
+            "Mars' Moons: Mars has two small moons, Phobos and Deimos, which are thought to be captured asteroids.",
+            "The Kuiper Belt: Beyond Neptune lies the Kuiper Belt, a region filled with icy bodies and dwarf planets, including Pluto.",
+            "The Oort Cloud: The Oort Cloud is a theoretical cloud of icy objects that is believed to surround the solar system at a distance of up to 100,000 AU (astronomical units).",
+            "Mercury's Temperature Extremes: Mercury experiences extreme temperature fluctuations, with daytime temperatures soaring to 800°F (427°C) and nighttime temperatures dropping to -330°F (-201°C).",
+            "Earth's Unique Atmosphere: Earth is the only planet known to support life, thanks to its atmosphere, which contains oxygen and is suitable for liquid water."
+        ];
+
+        document.getElementById('factButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * facts.length);
+            document.getElementById('factDisplay').textContent = facts[randomIndex];
+        });
+    </script>
+</body>
+</html>

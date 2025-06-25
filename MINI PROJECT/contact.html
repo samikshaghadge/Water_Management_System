@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="shortcut icon" href="./static/img/codecell_logo.svg" type="image/x-icon" sizes="any">
+        <script defer src="account_dropdown.js"></script>
+        <script defer src="burger_menu.js"></script>
+        <title>DropAware</title>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="left-side">
+                <div class="burger-menu">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+             </div>
+
+             <div class="logo">
+                     <img src="newlogo.jpeg" alt="Logo">
+            </div>
+          
+            <ul class="navbar_ul hide-burger-menu burger-menu-dropdown">
+                    <li><a href="mainpage.html" class="nav-link">Home  </a></li>
+                    <li><a href="Calculate3.html" class="nav-link">Calculator </a></li>
+                    <li><a href="solution1.html" class="nav-link">Solutions </a></li>
+                    <li><a href="profile.html" class="nav-link">Profile </a></li>
+                    <li><a href="blog.html" class="nav-link">Blog </a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            
+            </div>
+
+            <div class="right-side">
+                <div class="account">
+                    <img src="profile.jpeg" alt="HK">   
+                  <div class="dropdown-caret"></div>
+                </div>
+                
+                <div class="dropdown hide">
+                    <div class="user-name">username</div>
+
+                    <ul>
+                        <a href="profile.html"><li>Go to profile</li></a>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="title">Contact us</div>
+
+            <form action="" method="" class="form">
+                <div class="input-group">
+                    <input type="text" name="first_name" id="first-name" placeholder="First name">
+                    <label for="first-name">First name</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" name="last_name" id="last-name" placeholder="Last Name">
+                    <label for="last-name">Last name</label>
+                </div>
+
+                <div class="Age">
+                    <input type="text" name="Age" id="Age" placeholder="Age">
+                    <label for="Age">Your age</label>
+                </div>
+
+
+                <div class="input-group">
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e-mail">
+                    <label for="e-mail">E-mail</label>
+                </div>
+
+                <div class="textarea-group">
+                    <textarea name="Your query" id="Your query" rows="5" placeholder="Your query"></textarea>
+                    <label for="Your query">Your query</label>
+                </div>
+
+                <div class="button-div">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <img class="footlogo" src="newlogo.jpeg" alt="DropAware">
+        </footer>
+    </body>
+</html>

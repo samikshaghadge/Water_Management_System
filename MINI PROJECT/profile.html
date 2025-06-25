@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>profile</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="profile.css">
+    <script src="profile.js"></script>
+</head>
+
+<body>
+<div class="banner">
+    <div class="row">
+        <div class="overlay col-xs-10 col-xs-offset-1">
+            <div class="row">
+                <span>
+                    We'd like to get to know you better. 
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul class="pagination">
+    <li class="page active" id="li1"><h2>TELL US ABOUT YOURSELF</h2></li>
+</ul>
+
+<form id="slider" method="post" action="createProfile.php">
+    <article class = "article" id="article1">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="form-item col-xs-5 col-xs-offset-2">
+                <div class="row">
+                    <label class="large">YOUR GENDER</label>
+                </div>
+                <div class="row">
+                    <select name="gender" class="dropdown">
+                        <option value="N/A">Other </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-item col-xs-5">
+                <div class="row">
+                    <label class="large">YOU ARE INDIAN</label>
+                </div>
+                <div class="row">
+                     <select name="genderSeeking" class="dropdown">
+                        <option value="YES">YES</option>
+                        <option value="NO">NO</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="row">
+            <div class="form-item col-xs-5 col-xs-offset-2">
+                <div class="row">
+                    <label class="large">LOCATION</label>
+                </div>
+                <div class="row">
+                    <input type="text" id="zip" class="form-input" placeholder="enter city"/>
+                </div>
+            </div>
+
+            <div class="form-item col-xs-5">
+                <div class="row">
+                    <label class="large">DATE OF BIRTH</label>
+                </div>
+                <div class="row">
+                     <input type="text" class="bday" id="month" placeholder="MM" style="width:15%"/>
+                     <input type="text" class="bday" id="day" placeholder="DD" style="width:15%"/>
+                     <input type="text" class="bday" id="year" placeholder="YYYY" style="width:20%"/>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="form-item col-xs-5 col-xs-offset-2">
+            <div class="row">
+                <label class="large">YOUR AGE</label>
+            </div>
+            <div class="row">
+                <select name="gender" class="dropdown">
+                    <option value="4f1i">BELOW 10 YEARS</option>
+                    <option value="4f2i">10-20 YEARS </option>
+                    <option value="4f3i">20-30 YEARS</option>
+                    <option value="4f4i">30-40 YEARS</option>
+                    <option value="4f4i">40-50 YEARS</option>
+                    <option value="4f4i">ABOVE 50 YEARS</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-item col-xs-5">
+            <div class="row">
+                <label class="large" style="visibility: hidden">test</label>
+            </div>
+            <div class="row">
+                 <label class="binary-choice not-chosen" id="heightYes" value="1" >Yes</label>
+                 <label class="binary-choice chosen" id="heightNo" value="0" >No</label>
+            </div>
+            <div class="row">
+                <label class="small">Are you mindful of your water usage?</label>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-item col-xs-5 col-xs-offset-2">
+            <div class="row">
+                <label class="large" >OCCUPATION</label>
+            </div>
+            <div class="row">
+                <textarea type="text" id="occupation" class="dynamic" onkeyup="auto_grow(this)"></textarea>
+            </div>
+        </div>
+
+        <div class="form-item col-xs-5">
+            <div class="row">
+                <label class="large">EDUCATION</label>
+            </div>
+            <div class="row">
+                <select name="gender" class="dropdown">
+                    <option value="N/A"> </option>
+                    <option value="40k">UPTO 10TH GRADE</option>
+                    <option value="60k">UPTO 12TH GRADE</option>
+                    <option value="80k">UNDERGRADUATE</option>
+                    <option value="100k">POSTGRADUATE</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+    <label onclick="popupMessage()" class="next" id="next1">SAVE AND CONTINUE</label>
+    </div>
+    
+
+    
+    
+    
+   
+<script type="text/javascript">
+</script>       
+</body>
+</html>

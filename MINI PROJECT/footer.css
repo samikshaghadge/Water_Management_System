@@ -1,0 +1,52 @@
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    width: 75%;
+    margin-top: 80px;
+    margin-left: 100px;
+   margin-right: 80px;
+}
+
+
+
+.footlogo
+{
+    height: 110px;
+    align-items: center;
+    display: flex;
+    margin-left: 200px;
+}
+
+@keyframes fade
+{
+    0%
+    {
+        opacity: 0.2;
+    }
+
+    100%
+    {
+        opacity: 0.9;
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1295px)
+{
+    footer
+    {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+    footer
+    {
+        opacity: 0.9;
+    }
+}

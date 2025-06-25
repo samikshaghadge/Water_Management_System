@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="Calculate.css">
+<body>
+    
+ <h1> MISSION H2O : HELP YOU MAKE EVERY DROP MATTER</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT US</li>
+            <li>WATER MANAGEMENT</li>
+            <li>WATER RECYCLING</li>
+            <li>SOLUTIONS</li>
+            <li>BLOG</li>
+            <li>JOIN US</li>
+            <li>CONTACT US</li>
+        </ul>
+    </nav>
+    <h2>Calculate Your Water Footprint</h2>
+<p>Understanding your water footprint is the first step to reducing your water consumption. Answer the following questions to estimate your daily water use.</p>
+
+<form id="water-footprint-form" class="calculate-footprint">
+    <div class="form-group">
+        <label for="houesehold-size">Household-Size: </label>
+        <select name="household-size" id="household-size">
+            <option value="1">1 person</option>
+            <option value="2">2 person</option>
+            <option value="3">3 person</option>
+            <option value="4">4 or more person</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="shower duration">Average Shower Duration(minutes)</label>
+        <input type="number" id="shower-duration" name="shower duration">
+    </div>
+    <div class="form-group">
+        <label for="shower frequency">Shower Frequency(per day)</label>
+        <input type="number" id="shower-frequency" name="shower frequency">
+    </div>
+    <div class="form-group">
+        <label for="brushing teeth">Brushing Teeth Duration(minutes per session)</label>
+        <input type="number" id="brushing-duration" name="brushing teeth">
+    </div>
+    <div class="form-group">
+        <label for="brushing frequency">Brushing Frequency(per day)</label>
+        <input type="number" id="brushing-frequency" name="brushing frequency">
+    </div>
+    <div class="form-group">
+        <label for="laundry loads">Laundry loads(per week)</label>
+        <input type="number" id="laundry-loads" name="laundry loads">
+    </div>
+    <div class="form-group">
+        <label for="dishwashing">Dishwashing Method: </label>
+        <select name="dishwasing" id="dishwashing">
+            <option value="1">Dishwasher</option>
+            <option value="2">Handwashing</option>
+        </select>
+    </div>
+  <button type="submit">Calculate my Footprint</button>
+</form>
+<div id="result"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modal-content"></p>
+      <button id="ok-button">OK</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Mission H2O. All Rights Reserved.</p>
+  </footer>
+<script src="calculate.js"></script>
+</body>
+</html>

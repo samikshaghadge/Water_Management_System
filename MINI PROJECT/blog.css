@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e7f3ff; /* Light blue background */
+  color: #003366; /* Dark blue text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #005f99; /* Darker blue for navigation */
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #ffffff; /* White text for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styles */
+.search-results {
+  padding: 20px;
+  max-width: 800px; /* Set a max width for the content */
+  margin: 0 auto; /* Center the content */
+}
+
+.result {
+  background-color: #cce5ff; /* Light blue for result boxes */
+ 
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left:5px solid #28a745;
+  border-right: 5px solid #28a745 ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.result-url {
+  color: #007bff; /* Link color */
+  font-weight: bold;
+}
+
+.result-url:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.result-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.result-description {
+  color: #333333; /* Dark gray for description text */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block; /* Stack links on small screens */
+      margin-bottom: 10px;
+  }
+}
+/* Navigation styles */
+nav {
+  background-color: #005f99; /* Darker blue for navigation */
+  padding: 15px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-around; /* Distribute space evenly */
+}
+
+nav ul li {
+  flex: 1; /* Allow each item to grow equally */
+  text-align: center; /* Center text within each item */
+}
+
+.nav-link {
+  color: #ffffff; /* White text for links */
+  text-decoration: none;
+  font-weight: bold;
+  display: block; /* Make the entire list item clickable */
+  padding: 10px 0; /* Add padding for better clickability */
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f0f0;
+}
+header {
+    text-align: left;
+    padding: 6px;
+    image-rendering: auto; 
+  }
+  header img {
+    max-width: 200px;  /* Adjust value to your desired logo size */
+    max-height: 200px; /* Adjust value to your desired logo size */
+  }
+   header h1 {
+    font-size: 3em;
+    margin-left: 18%;
+    margin-top: -7%;
+  }
+  h1 {
+    font-size: 3em; /* Adjust font size for H1 */
+    color: rgb(0, 81, 152); /* Light blue color */
+    font-weight: bold;
+    margin-bottom: 10px; /* Add space below H1 */
+  }
